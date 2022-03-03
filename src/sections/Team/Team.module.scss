@@ -1,0 +1,57 @@
+@import '../../styles/mixins';
+
+.section {
+  background: #000;
+  padding: 50px;
+  margin-top: 50px;
+}
+
+.inner {
+  @include container(900px);
+}
+.sectionTitle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+  img {
+    max-width: 500px;
+    @include b(700) {
+      padding: 0 15px;
+      max-width: 100%;
+    }
+  }
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 50px;
+  grid-column-gap: 100px;
+}
+
+// LIST ITEM
+.title {
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+}
+.subtitle {
+  font-size: 16px;
+  color: #4682b4;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.image {
+  border-radius: 50%;
+  border: 8px solid #fff;
+  margin-bottom: 35px;
+  img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 50%;
+  }
+}

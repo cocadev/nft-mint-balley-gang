@@ -1,0 +1,35 @@
+.ham {
+  cursor: pointer;
+  transition: transform 400ms;
+  position: relative;
+  user-select: none;
+  z-index: 999;
+
+  width: 40px;
+}
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #fff;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+
+.ham .top {
+  stroke-dasharray: 40 139;
+}
+.ham .bottom {
+  stroke-dasharray: 40 180;
+}
+.ham.active .top {
+  stroke-dashoffset: -98px;
+}
+.ham.active .bottom {
+  stroke-dashoffset: -138px;
+}

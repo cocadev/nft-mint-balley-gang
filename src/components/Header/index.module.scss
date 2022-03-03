@@ -1,0 +1,64 @@
+@import '/src/styles/mixins';
+@import '/src/styles/themes';
+
+.header {
+  position: absolute;
+  @include container();
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 8px;
+
+  min-height: 120px;
+
+  transition: 0.4s ease-in-out;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  @include b(mobile) {
+    justify-content: center;
+    min-height: 80px;
+  }
+}
+
+.inner {
+  display: flex;
+  justify-content: flex-end;
+
+  @include b(mobile) {
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+}
+
+.links {
+  border-radius: 0 0 12px 12px;
+
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+
+  @include b(tablet) {
+    gap: 50px;
+  }
+
+  @include b(mobile) {
+    display: none;
+  }
+
+  @include bReverse(2000) {
+    padding-top: 6px;
+  }
+}
+
+.link {
+  & + & {
+    margin-left: 17px;
+  }
+  img {
+    width: 45px;
+    height: 45px;
+  }
+}

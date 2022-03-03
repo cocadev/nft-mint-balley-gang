@@ -1,0 +1,38 @@
+@import '/src/styles/themes';
+@import '/src/styles/mixins';
+
+.title {
+  font-family: 'PlayfairDisplay', serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.type_h1 {
+  font-size: 60px;
+}
+
+.type_h2 {
+  font-size: 32px;
+}
+
+.type_h3 {
+  font-size: 25px;
+}
+
+// align
+.align_left {
+  text-align: left;
+}
+
+.align_center {
+  text-align: center;
+}
+
+.align_right {
+  text-align: right;
+}
+
+// color
+.color_main {
+  color: $main-color;
+}

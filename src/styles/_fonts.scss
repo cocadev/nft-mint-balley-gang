@@ -1,0 +1,15 @@
+@include font-face('Roboto', '../assets/fonts/Roboto.ttf');
+@include font-face('PlayfairDisplay', '../assets/fonts/PlayfairDisplay.ttf');
+@include font-face('RedDelicious', '../assets/fonts/RedDelicious.otf');
+@include font-face('Nunito Sans', '../assets/fonts/NunitoSans-Black.ttf', 800);
+
+// new fonts
+@include font-face('EdoSZ', '../assets/fonts/edosz.ttf', 400);
+// Inter
+@include font-face('Inter', '../assets/fonts/Inter-Regular.otf', 400);
+@include font-face('Inter', '../assets/fonts/Inter-Bold.otf', 700);
+@include font-face('Inter', '../assets/fonts/Inter-ExtraBold.otf', 800);
+@include font-face('Inter', '../assets/fonts/Inter-Black.otf', 900);
+
+// Cormorant
+@include font-face('Cormorant', '../assets/fonts/Cormorant-Bold.ttf', 900);

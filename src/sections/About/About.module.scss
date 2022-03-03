@@ -1,0 +1,74 @@
+@import '/src/styles/mixins';
+
+.about {
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  @include b(1000) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.left {
+  img {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.right {
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+
+  img {
+    max-width: 424px;
+    @include b(700) {
+      padding: 0 15px;
+      max-width: 100%;
+    }
+  }
+}
+
+.right_title {
+  margin-bottom: 50px;
+}
+
+.text {
+  font-size: 22px;
+  line-height: 1.5;
+  max-width: 500px;
+  @include b(600) {
+    font-size: 18px;
+    text-align: justify;
+  }
+}
+
+// ROADMAP
+.roadmap_title {
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+  margin-bottom: 25px;
+  img {
+    max-width: 424px;
+    @include b(700) {
+      padding: 0 15px;
+      max-width: 100%;
+    }
+  }
+}
+
+.video {
+  width: 50%;
+  margin: 0 auto;
+  @include b(700) {
+    padding: 0 15px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,91 @@
+@import '/src/styles/mixins';
+
+.section {
+//   height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+
+  @include b(1000) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.right {
+  img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.left {
+  //   padding: 25px 50px;
+  height: 100%;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+// mint
+.mint {
+  //   background: rgba(30, 30, 30, 0.9);
+  padding: 26px 15px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 17px;
+}
+
+.subtitle {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 10px;
+
+  span {
+    color: #4682b4;
+  }
+}
+
+.info {
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.amount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 35px;
+}
+
+.value {
+  font-weight: 600;
+  font-size: 45px;
+  margin: 0 15px;
+}
+
+.change {
+  opacity: 0.5;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.button {
+  background: #4682b4;
+  padding: 10px 15px;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}

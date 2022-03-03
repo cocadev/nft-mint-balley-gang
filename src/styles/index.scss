@@ -1,0 +1,26 @@
+@import './mixins';
+@import './fonts';
+@import './themes';
+@import './reset';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: url('../assets/img/bg.webp');
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  color: $main-color;
+
+  overflow-x: hidden;
+}
+
+// toaster styles
+.Toastify__toast-body {
+  font-size: 16px;
+}

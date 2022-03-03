@@ -1,0 +1,29 @@
+@import '/src/styles/mixins';
+
+.block {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    max-width: 50%;
+    padding: 0 15px;
+
+    @include b(800) {
+      max-width: 100%;
+    }
+  }
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 75px;
+
+  @include b(500) {
+    position: relative;
+    top: -100px;
+    margin-bottom: -100px;
+  }
+}
